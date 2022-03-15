@@ -12,10 +12,24 @@
 
 > 藉此了解 `goroutine` 的執行方式，可用於節省執行時間。
 
-## 安裝及執行相關
+## 安裝 docker 環境及執行程式
 
 * clone GitHub repository
-* 執行
 ```
-$ go run .
+$ get clone https://github.com/yuyuancha/golang-practice-goroutine.git
+```
+
+* 透過 docker-compose 開啟 docker 容器
+```
+$ docker-compose up -d
+```
+
+* 執行 main.go
+```
+$ docker-compose exec app go run main.go
+```
+
+* 關閉 docker 容器
+```
+docker-compose down
 ```
