@@ -31,6 +31,7 @@ func main() {
 	fmt.Printf("程式總共花費 %d 秒", end-start)
 }
 
+// wait 隨機等待 0-2 秒，模擬程式執行
 func wait(round int, wg *sync.WaitGroup) {
 	defer func() {
 		fmt.Printf("[%s] Round %d is done.\n", time.Now().Format("2006-01-02 03:04:05"), round)
